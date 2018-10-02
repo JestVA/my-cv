@@ -1,0 +1,19 @@
+-
+  var myFullName = 'Dorin Dumitrascuta'
+  var myJobTitle = 'R&D'
+  var socialList = [
+    {icon: 'facebook2', url: 'https://facebook.com/ddumitrascuta'},
+    {icon: 'twitter', url: 'https://twitter.com/therealdorin'},
+    {icon: 'linkedin', url: 'https://www.linkedin.com/in/ddumitrascuta/'},
+    {icon: 'github', url: 'https://github.com/JestVA'},
+  ]
+div#landing-page
+div.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=myFullName
+    h2.landing-page__title=myJobTitle
+    ul.landing-page__social
+      each social in socialList
+        li.landing-page__item 
+          label.landing-page__label(for="")
+            span(class=`my-cv__icon--${social.icon}`)
