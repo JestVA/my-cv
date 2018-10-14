@@ -13,11 +13,30 @@
 .landing-page__name {
   font-size: 2rem;
   text-transform: uppercase;
+  color: white;
+  
 }
 
 .landing-page__title {
-  font-size: 2rem;
-  text-transform: capitalize;
+  font-size: 1rem;
+  color: white;
+  font-family: Mali;
+}
+
+.my-cv__icon--facebook2 {
+  color: burlywood;
+}
+
+.my-cv__icon--twitter {
+  color: yellow;
+}
+
+.my-cv__icon--github {
+  color: aqua;
+}
+
+.my-cv__icon--linkedin{
+  color: red;
 }
 
 .landing-page__social {
