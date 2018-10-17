@@ -4,7 +4,11 @@
   align-items: center;
   justify-content: center;
   // background-image: radial-gradient(#8a8fa2, #415a67)
-  // background-image: asset/image/background-image.png
+  background-image: url(asset/image/background-image.png);
+}
+.landing-page__item {
+  background-color: #f5f3efe6;
+  ;
 }
 
 .landing-page__wrapper {
@@ -14,7 +18,7 @@
 .landing-page__name {
   font-size: 2rem;
   text-transform: uppercase;
-  color: white;
+  color: rgba(245, 134, 7, 0.973);
   
 }
 

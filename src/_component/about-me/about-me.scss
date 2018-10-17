@@ -1,5 +1,10 @@
 .about-me {
-  background-image: radial-gradient(#e66465, #9198e5);
+  // nu merge, trebuie o singura culoare, altfel - fundal alb 
+  // background-image: color(#e1e1e1, #9198e5);
+}
+
+.about-me__content {
+  background-image: url(asset/image/background-image.png);
 }
 
 .about-me__header {
@@ -70,7 +75,7 @@
   border: 0.1rem solid #7ea1a6;
   border-radius: 1rem;
   background-color: white;
-  color: #7ea1a6;
+  color: rgba(245, 134, 7, 0.973);
   margin: 1rem auto;
   display: flex;
   justify-content: space-around;
@@ -82,3 +87,4 @@
   font-size: 1rem;
   line-height: 1;
 }
+
