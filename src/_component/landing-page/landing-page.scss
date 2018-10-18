@@ -3,12 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  // background-image: radial-gradient(#8a8fa2, #415a67)
-  background-image: url(asset/image/background-image.png);
+  background-color:  #FFC107;
+  // background-image: url(asset/image/background-image.png);
 }
 .landing-page__item {
-  background-color: #f5f3efe6;
-  ;
+  background-color: #FFC107;
 }
 
 .landing-page__wrapper {
@@ -16,15 +15,15 @@
 }
 
 .landing-page__name {
-  font-size: 2rem;
+  font-size: 7rem;
   text-transform: uppercase;
-  color: rgba(245, 134, 7, 0.973);
+  color: #FFFFFF;
   
 }
 
 .landing-page__title {
-  font-size: 1rem;
-  color: saddlebrown;
+  font-size: 3rem;
+  // color: #FFFFFF;
   font-family: Mali;
 }
 
@@ -46,21 +45,21 @@
 
 .landing-page__social {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   justify-content: center;
 }
 
 .landing-page__label {
-  color: white;
   padding: 0.1rem 0.3rem;
-  font-size: 1.5rem;
+  font-size: 4rem;
   cursor: pointer;
 }
 
 .landing-page__box-radio:checked +
 .landing-page__box-message {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   display: inherit;
+  font-size: 2.8rem;
 }
 
 .landing-page__box-radio,
@@ -76,7 +75,7 @@
 
 .landing-page__box-body {
   display: inline-block;
-  border: 0.2rem solid white;
+  border: 0.2rem solid #FFFFFF;
   border-radius: 0.5rem;
   padding: 0.8rem;
   margin-top: 0.5rem;
