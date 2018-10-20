@@ -1,6 +1,40 @@
 -
-  var awardHeader ='#awards'
+  var awardHeader ='#awards';
+    var awardList = [
+        {
+        title: 'Featured in the Credits screen of FIFA18',
+        description: '...as a DC&L Assistant Producer',
+        location: 'FIFA18 / EA Sports',
+        date: '2017'
+      },
+      {
+        title: 'Best advertising campaign for a Bank',
+        description: 'Pitch from ABN Amro',
+        location: 'Bucharest',
+        date: '2008'
+      },
+      {
+        title: '3rd place won at the National Philosophy contest',
+        description: 'A paper on Seneca and stoicism',
+        location: 'Romania',
+        date: '2006'
+      }
+      ];  
 
 #award
 .award 
-  .award__header=awardHeader 
+  .award__header=awardHeader
+  each award in awardList 
+      .award__card
+        .award__icon  
+          span.my-cv__icon--trophy
+        .award__title=award.title
+        .award__icon  
+          span.my-cv__icon--info
+        .award__description=award.description
+        .award__icon  
+          span.my-cv__icon--map2
+        .award__location=award.location
+        .award__icon  
+          span.my-cv__icon--calendar
+        .award__date=award.date
