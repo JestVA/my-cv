@@ -17,36 +17,38 @@
 .landing-page__name {
   font-size: 7rem;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #E64A19;
+  font-family: 'Permanent Marker', cursive;
   
 }
 
 .landing-page__title {
-  font-size: 3rem;
-  // color: #FFFFFF;
+  font-size: 1.8rem;
+  color: #212121;
   font-family: Mali;
 }
 
-.my-cv__icon--facebook2 {
-  color: burlywood;
-}
+// .my-cv__icon--facebook2 {
+//   color: burlywood;
+// }
 
-.my-cv__icon--twitter {
-  color: yellow;
-}
+// .my-cv__icon--twitter {
+//   color: yellow;
+// }
 
-.my-cv__icon--github {
-  color: aqua;
-}
+// .my-cv__icon--github {
+//   color: aqua;
+// }
 
-.my-cv__icon--linkedin{
-  color: red;
-}
+// .my-cv__icon--linkedin{
+//   color: red;
+// }
 
 .landing-page__social {
   display: flex;
   margin-top: 1rem;
   justify-content: center;
+  color: #E64A19;
 }
 
 .landing-page__label {
@@ -57,9 +59,9 @@
 
 .landing-page__box-radio:checked +
 .landing-page__box-message {
-  padding: 0.5rem 0;
+  padding: 0.4rem 0;
   display: inherit;
-  font-size: 2.8rem;
+  font-size: 1rem;
 }
 
 .landing-page__box-radio,

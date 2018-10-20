@@ -1,0 +1,8 @@
+#award {
+  color: red;
+}
+
+.award__header {
+  color: $color-periwinkle-gray;
+  @extend %header;
+}
