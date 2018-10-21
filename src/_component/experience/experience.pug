@@ -3,9 +3,23 @@
     var header = '#experience'
     var experienceList = [
       {
-        title: 'mytitle',
+        title: 'Junior Developer',
+        date: 'Feb 2018 - Present',
+        company: 'BitBee.uk',
+        responsabilityList: [
+          'Fluid typography / Responsive web design',
+          'Mobile first approach, using media queries for tablet and desktop',
+          'Create single page apps with blazing fast load speed and good UX',
+          'Expand components using page building engines like Jade/PUG, saving time and iterating templates',
+          'Optimizing sites for speed and excellent Google Page-speed score',
+          'Front-end and back-end technical optimizations: crushing images, creating build files that get pushed to server and optimizing the sites from a Digital Marketing perspective (SEO, copywriting)',
+          'Manage code versions using Git',
+        ]
+      },
+      {
+        title: 'Digital Product Manager',
         date: 'the date',
-        company: 'the company',
+        company: 'ClickMinded',
         responsabilityList: [
           'responsability one',
           'responsability two',
@@ -13,19 +27,9 @@
         ]
       },
       {
-        title: 'mytitle',
+        title: 'Assistant Producer',
         date: 'the date',
-        company: 'the company',
-        responsabilityList: [
-          'responsability one',
-          'responsability two',
-          'responsability three',
-        ]
-      },
-      {
-        title: 'mytitle',
-        date: 'the date',
-        company: 'the company',
+        company: 'EA',
         responsabilityList: [
           'responsability one',
           'responsability two',
@@ -37,12 +41,16 @@
 #experience
 .experience
     .experience__header=header
-    input(type="radio", name="same-name", id="experience-default")
-    label(for="experience-default") &times; 
+    input.experience__input(type="radio", name="same-name", id="experience-default")
+    
 
-    each experience in experienceList
-        input.experience__input(type="radio", name="same-name", id=`experience-id-${key}`)
-        label.experience__title(for=`experience-id-${key}`)=experience.title
+    each experience, key in experienceList
+        input.experience__input(type="radio", name="same-name",
+         id=`experience-id-${key}`)
+        label.experience__title(for=`experience-id-${key}`)
+            | #{experience.title}
+            label(for="experience-default")
+                span.my-cv__icon--plus
         .experience__details
             .experience__top
                 .experience__date=experience.date
