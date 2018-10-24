@@ -1,6 +1,6 @@
 .landscape,
 .landscape__input {
-    // display: none;
+    display: none;
 }
 
 .landscape {
@@ -19,7 +19,7 @@
   position: fixed;
   top: 1rem;
   left: 1rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -27,10 +27,30 @@
 }
 
 @media (orientation: landscape) {
-  // rules for defining landscape instructions
-  display: flex;
-  align-items: center;
-  justify-content: center;  
-  color: $color-white;
-  font-size: 2rem;
+  .landscape {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    color: $color-white;
+    font-size: 1rem;
+  }
+}
+
+.landscape__description {
+  padding: 2rem 0;
+}
+
+.landscape__list {
+  list-style-type: disc;
+}
+
+.landscape__message--show {
+  display: none;
+}
+.landscape__message--hide {
+  display: block;
+}
+
+#landscape:checked + .landscape {
+  top: -100%;
 }
