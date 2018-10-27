@@ -23,7 +23,8 @@
 }
 
 .menu__label {
-  padding: 0 1;
+  padding: 1rem;
+  padding-right: 1rem;
 }
 
 .menu__go-to {
@@ -36,4 +37,9 @@
   padding: 1rem;
   border-radius: 0.5rem;
   text-decoration: none;
+}
+
+
+[class^="my-cv__icon--"], [class*=" my-cv__icon--"] {
+  padding-right: 1rem;
 }
