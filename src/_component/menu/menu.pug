@@ -40,5 +40,5 @@ a.menu__go-to(href="#menu")
     each menu in menuList
         a.menu__link(href=menu.link)
             span(class=`my-cv__icon--${menu.icon}`)
-            span=menu.label
+            span(class="menu-iconspan")=menu.label
 
