@@ -1,0 +1,18 @@
+$element-one: url(https://duaw26jehqd4r.cloudfront.net/items/1R3B09311U280Q082N33/Screen%20Recording%202018-11-15%20at%2009.41%20PM.gif);
+$element-two: url(https://duaw26jehqd4r.cloudfront.net/items/1Q3X1e2N2p1a0C123P1a/Screen%20Recording%202018-11-15%20at%2009.43%20PM.gif);
+.element-one {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  background: $element-one;
+  height: 500px;
+}
+
+.element-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: $element-two;
+  height: 500px
+}
+
